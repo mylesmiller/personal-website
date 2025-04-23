@@ -1,0 +1,92 @@
+.tetris-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.tetris-piece {
+  position: absolute;
+  opacity: 0.15;
+  animation: float var(--duration, 20s) infinite linear;
+  transform-origin: center;
+  width: 60px;
+  height: 60px;
+}
+
+/* Different Tetris pieces */
+.t-piece {
+  background: linear-gradient(45deg, #ff0000, #ff6666);
+  clip-path: polygon(
+    0% 0%, 100% 0%, 100% 33.33%,  /* Top bar */
+    66.66% 33.33%, 66.66% 100%,    /* Right side of stem */
+    33.33% 100%, 33.33% 33.33%,    /* Left side of stem */
+    0% 33.33%                      /* Back to start */
+  );
+}
+
+.l-piece {
+  background: linear-gradient(45deg, #ff9900, #ffcc66);
+  clip-path: polygon(
+    0% 0%, 33.33% 0%,              /* Top of vertical */
+    33.33% 66.66%, 100% 66.66%,    /* Top of horizontal */
+    100% 100%, 0% 100%             /* Bottom */
+  );
+}
+
+.j-piece {
+  background: linear-gradient(45deg, #0000ff, #6666ff);
+  clip-path: polygon(
+    66.66% 0%, 100% 0%,            /* Top of vertical */
+    100% 100%, 0% 100%,            /* Bottom */
+    0% 66.66%, 66.66% 66.66%       /* Horizontal part */
+  );
+}
+
+.s-piece {
+  background: linear-gradient(45deg, #00ff00, #66ff66);
+  clip-path: polygon(
+    33.33% 0%, 100% 0%,            /* Top right */
+    100% 33.33%, 66.66% 33.33%,    /* Middle right */
+    66.66% 66.66%, 0% 66.66%,      /* Bottom left */
+    0% 33.33%, 33.33% 33.33%       /* Back to start */
+  );
+}
+
+.z-piece {
+  background: linear-gradient(45deg, #ff00ff, #ff66ff);
+  clip-path: polygon(
+    0% 0%, 66.66% 0%,              /* Top left */
+    66.66% 33.33%, 100% 33.33%,    /* Middle right */
+    100% 66.66%, 33.33% 66.66%,    /* Bottom right */
+    33.33% 33.33%, 0% 33.33%       /* Back to start */
+  );
+}
+
+.o-piece {
+  background: linear-gradient(45deg, #ffff00, #ffff66);
+  clip-path: polygon(
+    0% 0%, 100% 0%,                /* Top */
+    100% 100%, 0% 100%             /* Bottom */
+  );
+}
+
+.i-piece {
+  background: linear-gradient(45deg, #00ffff, #66ffff);
+  clip-path: polygon(
+    0% 33.33%, 100% 33.33%,        /* Top edge */
+    100% 66.66%, 0% 66.66%         /* Bottom edge */
+  );
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(-100px) rotate(0deg) scale(var(--scale, 1));
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg) scale(var(--scale, 1));
+  }
+} 

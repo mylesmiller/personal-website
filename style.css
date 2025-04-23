@@ -14,55 +14,95 @@ html, body {
 }
 
 h1 {
-  font-size: 6em; 
+  font-size: 8em; 
   margin: 0;
   padding: 0;
-  margin-bottom: 0px; 
+  margin-bottom: 20px;
 }
 h2 {
-  font-size: 2em;
+  font-size: 3em;
+  margin-bottom: 40px;
 }
 
 .social-links {
   text-align: center;
   margin: 0;
   padding: 0;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .button {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   margin: 0 10px;
-  padding: 10px 20px;
-  font-size: 1em;
+  padding: 15px 25px;
+  font-size: 1.2em;
   text-decoration: none;
-  color: #fff;
-  background: #007bff; 
-  border-radius: 5px;
-  transition: background-color 0.3s;
+  color: #fff !important;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
-.youtube:hover {
-  background: #c4302b; 
+.button i {
+  font-size: 1.4em;
 }
 
-.instagram:hover {
-  background: #f59801;
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-.twitter:hover {
+.youtube {
+  background: #ff0000;
+  color: #fff !important;
+}
+
+.instagram {
+  background: #E1306C;
+}
+
+.twitter {
   background: #1DA1F2;
 }
 
+.github {
+  background: #333;
+}
+
+.linkedin {
+  background: #0077b5;
+}
+
+.email {
+  background: #0226f1;
+}
+
+.youtube:hover {
+  background: #cc0000;
+}
+
+.instagram:hover {
+  background: #c13584;
+}
+
+.twitter:hover {
+  background: #1a8cd8;
+}
+
 .github:hover {
-  background: #333; 
+  background: #24292e;
 }
 
 .linkedin:hover {
-  background: #0c00b5; 
+  background: #005e93;
 }
 
 .email:hover {
-  background: #0226f1; 
+  background: #021dc7;
 }
 
 @keyframes bounce {
@@ -88,19 +128,289 @@ h2 {
 .arrow {
   animation: bounce 5s infinite;
   display: inline-block; 
-  font-size: 2em;
+  font-size: 4em;
   margin-top: 0px;
 }
 
 .second-page {
-  min-height: 110vh; 
-  padding: 20px;
-  background: #fff;
+  min-height: 100vh;
+  padding-top: 140px;
+  background: #007bff;
+  color: white;
   display: flex;
   flex-direction: column;
-  justify-content: right;
+  justify-content: flex-start;
   align-items: center;
-  height: 100%;
+  text-align: center;
+}
+
+.second-page h2 {
+  font-size: 4.5em;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+.second-page p {
+  font-size: 1.7em;
+  max-width: 800px;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.platform-link {
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.platform-link:hover {
+  opacity: 0.8;
+}
+
+/* YouTube link */
+a[href*="youtube.com"] {
+  color: #ff0000;
+}
+
+/* Twitch link */
+a[href*="twitch.tv"] {
+  color: #9146ff;
+}
+
+/* TikTok link */
+a[href*="tiktok.com"] {
+  color: #000000;
+}
+
+.tetris-section {
+  min-height: 100vh;
+  padding-top: 100px;
+  background: #1a1a1a;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.about-page {
+  background: #1a1a1a;
+  min-height: 100vh;
+}
+
+.tetris-section h2 {
+  font-size: 4.5em;
+  margin-bottom: 60px;
+  margin-top: 0;
+  color: white;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.achievement-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.achievement-icon {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.achievement-card h3 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+.achievement-card p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.video-container {
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+
+.video-thumbnail {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.video-link {
+  position: relative;
+  display: block;
+  color: #ff0000;
+  text-decoration: none;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.7);
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.1em;
+  transition: background 0.3s ease;
+}
+
+.video-link:hover .video-thumbnail {
+  transform: scale(1.02);
+}
+
+.video-link:hover .play-button {
+  background: rgba(255, 0, 0, 0.8);
+}
+
+.media-link {
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 8px 0;
+  transition: color 0.3s ease;
+  line-height: 1.4;
+  font-size: 1.1em;
+}
+
+.media-link:hover {
+  color: #007bff;
+}
+
+.media-link i {
+  font-size: 1.2em;
+  margin-top: 0.2em;
+}
+
+.achievement-card ul {
+  margin: 10px 0;
+  width: 100%;
+}
+
+.achievement-card li {
+  margin-bottom: 15px;
+}
+
+/* Navigation */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.nav-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #007bff;
+}
+
+/* Read More Button */
+.read-more-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #FFD700;
+  color: #000000;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-top: 30px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+.read-more-button:hover {
+  background: #FFC000;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+}
+
+.read-more-button i {
+  transition: transform 0.3s ease;
+}
+
+.read-more-button:hover i {
+  transform: translateX(5px);
+}
+
+/* About Page */
+.about-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 3em;
+  margin-bottom: 30px;
+}
+
+.about-section p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
 

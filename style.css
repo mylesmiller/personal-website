@@ -216,7 +216,7 @@ a[href*="tiktok.com"] {
 .achievement-card {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 15px;
-  padding: 30px;
+  padding: 20px 20px 10px 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -241,9 +241,10 @@ a[href*="tiktok.com"] {
 }
 
 .achievement-card p {
-  font-size: 1.2em;
+  font-size: 1.4em;
   line-height: 1.6;
   color: #ffffff;
+  margin-bottom: 0;
 }
 
 .video-container {

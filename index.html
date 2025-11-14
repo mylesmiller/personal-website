@@ -1,69 +1,451 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="mylespfp.jpg">
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="tetris-animation.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <title>Myles Miller</title>
-  <meta property="og:title" content="Myles Miller" />
-  <meta property="og:description" content="Computer Science Student @ SMU" />
+  <title>Myles Miller - Portfolio</title>
+  <meta property="og:title" content="Myles Miller - Portfolio" />
+  <meta property="og:description" content="Computer Science Student @ SMU | Professional Tetris Player | Content Creator" />
   <meta property="og:image" content="http://mylesmiller.me/mylesprofessionalpfp.jpg" />
   <meta property="og:url" content="http://mylesmiller.me" />
   <meta property="og:type" content="website" />
 </head>
 <body>
-  <div class="tetris-container">
-    <div class="tetris-piece s-piece" style="--duration: 15s; --scale: 1.2; left: 5%; animation-delay: 0s;"></div>
-    <div class="tetris-piece z-piece" style="--duration: 25s; --scale: 0.8; left: 15%; animation-delay: 1.5s;"></div>
-    <div class="tetris-piece t-piece" style="--duration: 18s; --scale: 1.5; left: 25%; animation-delay: 0.8s;"></div>
-    <div class="tetris-piece l-piece" style="--duration: 22s; --scale: 1.1; left: 35%; animation-delay: 2.2s;"></div>
-    <div class="tetris-piece j-piece" style="--duration: 28s; --scale: 0.9; left: 45%; animation-delay: 1.2s;"></div>
-    <div class="tetris-piece o-piece" style="--duration: 16s; --scale: 1.3; left: 55%; animation-delay: 2.8s;"></div>
-    <div class="tetris-piece i-piece" style="--duration: 24s; --scale: 0.7; left: 65%; animation-delay: 0.5s;"></div>
-    <div class="tetris-piece s-piece" style="--duration: 19s; --scale: 1.4; left: 75%; animation-delay: 1.8s;"></div>
-    <div class="tetris-piece z-piece" style="--duration: 27s; --scale: 0.6; left: 85%; animation-delay: 2.5s;"></div>
-    <div class="tetris-piece t-piece" style="--duration: 21s; --scale: 1.6; left: 95%; animation-delay: 0.3s;"></div>
-    <div class="tetris-piece l-piece" style="--duration: 17s; --scale: 0.5; left: 10%; animation-delay: 2.1s;"></div>
-    <div class="tetris-piece j-piece" style="--duration: 23s; --scale: 1.7; left: 20%; animation-delay: 1.4s;"></div>
-    <div class="tetris-piece o-piece" style="--duration: 26s; --scale: 0.4; left: 30%; animation-delay: 0.7s;"></div>
-    <div class="tetris-piece i-piece" style="--duration: 20s; --scale: 1.8; left: 40%; animation-delay: 2.3s;"></div>
-    <div class="tetris-piece s-piece" style="--duration: 29s; --scale: 0.3; left: 50%; animation-delay: 1.1s;"></div>
-    <div class="tetris-piece z-piece" style="--duration: 14s; --scale: 1.9; left: 60%; animation-delay: 2.6s;"></div>
-    <div class="tetris-piece t-piece" style="--duration: 30s; --scale: 0.2; left: 70%; animation-delay: 0.9s;"></div>
-    <div class="tetris-piece l-piece" style="--duration: 13s; --scale: 2.0; left: 80%; animation-delay: 1.6s;"></div>
-    <div class="tetris-piece j-piece" style="--duration: 31s; --scale: 0.1; left: 90%; animation-delay: 2.4s;"></div>
-    <div class="tetris-piece o-piece" style="--duration: 12s; --scale: 2.1; left: 100%; animation-delay: 0.4s;"></div>
-  </div>
-  <div class="content">
-    <h1>Myles Miller</h1>
-    <h2>Computer Science Student @ SMU</h2>
-    <div class="social-links">
-      <a href="https://youtube.com/mylesthegreat" class="button youtube"><i class="fab fa-youtube"></i>YouTube</a>
-      <a href="https://www.instagram.com/mylesmiller33/" class="button instagram"><i class="fab fa-instagram"></i>Instagram</a>
-      <a href="https://x.com/mylesthegreat2" class="button twitter"><i class="fab fa-twitter"></i>Twitter</a>
-      <a href="https://github.com/mylesmiller" class="button github"><i class="fab fa-github"></i>GitHub</a>
-      <a href="https://www.linkedin.com/in/mylesmillersmu/" class="button linkedin"><i class="fab fa-linkedin"></i>LinkedIn</a>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-content">
+      <a href="#home" class="nav-logo">Myles Miller</a>
+      <div class="nav-links">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <button class="mobile-menu-toggle" id="mobileMenuToggle">
+        <i class="fas fa-bars"></i>
+      </button>
     </div>
-  </div> 
-  <div class="scroll-indicator">
-      <span class="arrow">↓</span>
-  </div>
-  <div class="second-page">
-    <h2>About Me</h2>
-    <p>
-      I'm a 21 year old computer science student currently studying at Southern Methodist University (SMU). 
-    </p>
-    <p>
-      I'm one of the best Tetris players in the world and a content creator
-      with over 100k subscribers on <a href="https://youtube.com/mylesthegreat" class="platform-link">YouTube</a>, partner on <a href="https://twitch.tv/mylesthegreat" class="platform-link">Twitch</a>, and 200k followers on <a href="https://www.tiktok.com/@mylestg" class="platform-link">TikTok</a>.
-    </p>
-    <a href="about.html" class="read-more-button">
-      <span>Read More</span>
-      <i class="fas fa-arrow-right"></i>
-    </a>
-  </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="tetris-container">
+      <div class="tetris-piece s-piece" style="--duration: 15s; --scale: 1.2; --drift: 0.5; left: 5%; animation-delay: 0s;"></div>
+      <div class="tetris-piece z-piece" style="--duration: 25s; --scale: 0.8; --drift: -0.3; left: 15%; animation-delay: 1.5s;"></div>
+      <div class="tetris-piece t-piece" style="--duration: 18s; --scale: 1.5; --drift: 0.2; left: 25%; animation-delay: 0.8s;"></div>
+      <div class="tetris-piece l-piece" style="--duration: 22s; --scale: 1.1; --drift: -0.4; left: 35%; animation-delay: 2.2s;"></div>
+      <div class="tetris-piece j-piece" style="--duration: 28s; --scale: 0.9; --drift: 0.6; left: 45%; animation-delay: 1.2s;"></div>
+      <div class="tetris-piece o-piece" style="--duration: 16s; --scale: 1.3; --drift: -0.2; left: 55%; animation-delay: 2.8s;"></div>
+      <div class="tetris-piece i-piece" style="--duration: 24s; --scale: 0.7; --drift: 0.4; left: 65%; animation-delay: 0.5s;"></div>
+      <div class="tetris-piece s-piece" style="--duration: 19s; --scale: 1.4; --drift: -0.5; left: 75%; animation-delay: 1.8s;"></div>
+      <div class="tetris-piece z-piece" style="--duration: 27s; --scale: 0.6; --drift: 0.3; left: 85%; animation-delay: 2.5s;"></div>
+      <div class="tetris-piece t-piece" style="--duration: 21s; --scale: 1.6; --drift: -0.1; left: 95%; animation-delay: 0.3s;"></div>
+      <!-- Additional pieces for more dynamic animation -->
+      <div class="tetris-piece l-piece" style="--duration: 20s; --scale: 1.0; --drift: 0.7; left: 10%; animation-delay: 3s;"></div>
+      <div class="tetris-piece j-piece" style="--duration: 23s; --scale: 0.9; --drift: -0.6; left: 30%; animation-delay: 4s;"></div>
+      <div class="tetris-piece o-piece" style="--duration: 17s; --scale: 1.2; --drift: 0.4; left: 50%; animation-delay: 5s;"></div>
+      <div class="tetris-piece i-piece" style="--duration: 26s; --scale: 0.8; --drift: -0.3; left: 70%; animation-delay: 3.5s;"></div>
+      <div class="tetris-piece s-piece" style="--duration: 19s; --scale: 1.1; --drift: 0.5; left: 90%; animation-delay: 4.5s;"></div>
+      <div class="tetris-piece z-piece" style="--duration: 22s; --scale: 1.3; --drift: -0.4; left: 20%; animation-delay: 6s;"></div>
+      <div class="tetris-piece t-piece" style="--duration: 18s; --scale: 0.9; --drift: 0.2; left: 40%; animation-delay: 5.5s;"></div>
+      <div class="tetris-piece l-piece" style="--duration: 24s; --scale: 1.4; --drift: -0.5; left: 60%; animation-delay: 6.5s;"></div>
+      <div class="tetris-piece j-piece" style="--duration: 21s; --scale: 1.0; --drift: 0.3; left: 80%; animation-delay: 7s;"></div>
+      <div class="tetris-piece o-piece" style="--duration: 16s; --scale: 1.5; --drift: -0.2; left: 12%; animation-delay: 7.5s;"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-title-wrapper">
+          <h1 class="hero-title">
+            <span class="gradient-text">Myles Miller</span>
+          </h1>
+          <div class="tetris-trail">
+            <div class="trail-piece t-piece" style="--delay: 0s; --offset: 0px;"></div>
+            <div class="trail-piece l-piece" style="--delay: 0.2s; --offset: 20px;"></div>
+            <div class="trail-piece j-piece" style="--delay: 0.4s; --offset: 40px;"></div>
+            <div class="trail-piece s-piece" style="--delay: 0.6s; --offset: 60px;"></div>
+            <div class="trail-piece z-piece" style="--delay: 0.8s; --offset: 80px;"></div>
+            <div class="trail-piece o-piece" style="--delay: 1s; --offset: 100px;"></div>
+            <div class="trail-piece i-piece" style="--delay: 1.2s; --offset: 120px;"></div>
+          </div>
+        </div>
+        <h2 class="hero-subtitle">Software Engineer @ G-Research</h2>
+        <p class="hero-description">
+          Computer Science Student @ SMU • Professional Tetris Player • Content Creator
+        </p>
+        <div class="social-links">
+          <a href="https://youtube.com/mylesthegreat" class="social-link youtube" aria-label="YouTube" target="_blank">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://github.com/mylesmiller" class="social-link github" aria-label="GitHub" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/mylesmillersmu/" class="social-link linkedin" aria-label="LinkedIn" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://x.com/mylesthegreat2" class="social-link twitter" aria-label="Twitter" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/mylesmiller33/" class="social-link instagram" aria-label="Instagram" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <a href="#about" class="scroll-arrow">
+        <span>↓</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p class="lead">
+            I'm a Software Engineer at G-Research and a computer science student at Southern Methodist University (SMU) with a passion for technology, gaming, and content creation.
+          </p>
+          <p>
+            Beyond my academic pursuits, I'm recognized as one of the world's top Tetris players, competing at the highest levels in tournaments like the Classic Tetris World Championship (CTWC). My achievements in competitive gaming have earned me recognition in major media outlets and a dedicated following across multiple platforms.
+          </p>
+          <p>
+            As a content creator, I've built a community of over 100k subscribers on <a href="https://youtube.com/mylesthegreat" class="link youtube-link">YouTube</a>, became partnered on <a href="https://twitch.tv/mylesthegreat" class="link twitch-link">Twitch</a>, and reached 200k followers on <a href="https://www.tiktok.com/@mylestg" class="link tiktok-link">TikTok</a>. I combine my technical skills with my passion for gaming to create engaging content and build innovative projects.
+          </p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <div class="stat-number youtube-color">100K+</div>
+              <div class="stat-label">YouTube Subscribers</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number tiktok-color">200K+</div>
+              <div class="stat-label">TikTok Followers</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number twitch-color">Twitch Partner</div>
+              <div class="stat-label">Verified Content Creator</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section experience-section">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="experience-timeline">
+        <div class="experience-item">
+          <div class="experience-header">
+            <div class="experience-title-group">
+              <h3 class="experience-title">Software Engineer</h3>
+              <h4 class="experience-company">
+                <a href="https://www.gresearch.com" target="_blank" rel="noopener noreferrer">G-Research</a>
+              </h4>
+            </div>
+            <div class="experience-date">Present</div>
+          </div>
+          <div class="experience-location">
+            <i class="fas fa-map-marker-alt"></i> Dallas, TX
+          </div>
+          <ul class="experience-details">
+            <li>Building and optimizing ultra-low-latency network infrastructure that powers high-frequency trading systems processing billions in market transactions.</li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <div class="experience-header">
+            <div class="experience-title-group">
+              <h3 class="experience-title">Software Engineering Intern</h3>
+              <h4 class="experience-company">
+                <a href="https://www.gresearch.com" target="_blank" rel="noopener noreferrer">G-Research</a>
+              </h4>
+            </div>
+            <div class="experience-date">May 2025 - August 2025</div>
+          </div>
+          <div class="experience-location">
+            <i class="fas fa-map-marker-alt"></i> Dallas, TX
+          </div>
+          <ul class="experience-details">
+            <li>Developed and automated CI/CD pipelines to streamline software deployment processes</li>
+            <li>Built and maintained observability dashboards using Grafana, Argos, and VictoriaMetrics</li>
+            <li>Implemented automated Slack alerting for Jenkins build failures to improve team responsiveness</li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <div class="experience-header">
+            <div class="experience-title-group">
+              <h3 class="experience-title">Content Creator</h3>
+              <h4 class="experience-company">
+                <a href="https://youtube.com/mylesthegreat" target="_blank" rel="noopener noreferrer">Social Media</a>
+              </h4>
+            </div>
+            <div class="experience-date">August 2019 - Present</div>
+          </div>
+          <div class="experience-location">
+            <i class="fas fa-map-marker-alt"></i> Dallas, TX
+          </div>
+          <ul class="experience-details">
+            <li>Formed a community of over 350,000 people with over 100 million views across TikTok, YouTube, and Instagram</li>
+            <li>Partnered with The Tetris Company, Inc. for movie promotion campaigns</li>
+            <li>Designed and executed daily video streams for over 500 subscribers</li>
+            <li>Invited panelist at Classic Game Fest (over 7,000 attendees)</li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <div class="experience-header">
+            <div class="experience-title-group">
+              <h3 class="experience-title">Sales Advisor</h3>
+              <h4 class="experience-company">
+                <a href="https://www.officedepot.com" target="_blank" rel="noopener noreferrer">Office Depot</a>
+              </h4>
+            </div>
+            <div class="experience-date">June 2022 - August 2022</div>
+          </div>
+          <div class="experience-location">
+            <i class="fas fa-map-marker-alt"></i> Scottsdale, AZ
+          </div>
+          <ul class="experience-details">
+            <li>Acknowledged as Employee of the Month for outstanding performance</li>
+            <li>Assisted customers with point-of-sale transactions and product inquiries</li>
+            <li>Interacted with diverse clientele, resolved issues, and promoted brand image</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="section achievements-section">
+    <div class="container">
+      <h2 class="section-title">Notable Achievements</h2>
+      <div class="achievements-timeline">
+        <!-- Made History -->
+        <div class="achievement-item">
+          <div class="achievement-header">
+            <div class="achievement-title-group">
+              <h3 class="achievement-title">Made History</h3>
+              <h4 class="achievement-category">Tetris Milestone</h4>
+            </div>
+            <div class="achievement-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+          </div>
+          <p class="achievement-description">Crashed Tetris by playing for 1490 lines and causing the console to freeze. It took me years of practice to get to this level.</p>
+          <a href="https://www.youtube.com/watch?v=aAS5-og7Ou4" class="achievement-link" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-youtube"></i> Watch Video
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <!-- Tournament Victories -->
+        <div class="achievement-item">
+          <div class="achievement-header">
+            <div class="achievement-title-group">
+              <h3 class="achievement-title">Tournament Victories</h3>
+              <h4 class="achievement-category">Competitive Gaming</h4>
+            </div>
+            <div class="achievement-icon">
+              <i class="fas fa-medal"></i>
+            </div>
+          </div>
+          <ul class="achievement-details">
+            <li>
+              <span class="achievement-badge champion">Champion</span>
+              <span class="achievement-text">CTB September 2020</span>
+              <a href="https://www.youtube.com/watch?v=fPFnNL79dV8" target="_blank" rel="noopener noreferrer" class="achievement-external-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </li>
+            <li>
+              <span class="achievement-badge champion">Champion</span>
+              <span class="achievement-text">CTWC Desert 2022</span>
+              <a href="https://youtu.be/7dAW-FuUCY0?si=BE8ZMh98WNmzRSyj&t=4414" target="_blank" rel="noopener noreferrer" class="achievement-external-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </li>
+            <li>
+              <span class="achievement-badge champion">Champion</span>
+              <span class="achievement-text">CTW Battle Royal 4 2023</span>
+            </li>
+            <li>
+              <span class="achievement-badge champion">Champion</span>
+              <span class="achievement-text">CTB Winter Games 2025</span>
+            </li>
+            <li>
+              <span class="achievement-badge">Top 8</span>
+              <span class="achievement-text">CTWC (Classic Tetris World Championship)</span>
+            </li>
+            <li>
+              <span class="achievement-badge">Finals</span>
+              <span class="achievement-text">Multiple CTM Finals appearances (Dec 2021, Mar 2023, July 2024, Oct 2024)</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Tetris Rankings -->
+        <div class="achievement-item">
+          <div class="achievement-header">
+            <div class="achievement-title-group">
+              <h3 class="achievement-title">Tetris Rankings</h3>
+              <h4 class="achievement-category">Premiere Poll</h4>
+            </div>
+            <div class="achievement-icon">
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <p class="achievement-description">Consistently ranked in the Top 10 of the Premiere Poll, a monthly Classic Tetris power ranking, showcasing sustained elite-level performance.</p>
+          <a href="https://premierepoll.com/" class="achievement-link" target="_blank" rel="noopener noreferrer">
+            View Rankings
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-subtitle">Let's connect! Whether you're interested in collaboration, have questions, or just want to chat.</p>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:mylesmiller2014@gmail.com" class="contact-link">mylesmiller2014@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Location</h4>
+              <p>Dallas, Texas</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-university"></i>
+            <div>
+              <h4>Education</h4>
+              <p>Southern Methodist University</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-social">
+          <h3>Connect on Social Media</h3>
+          <div class="social-links-large">
+            <a href="https://youtube.com/mylesthegreat" class="social-link-large youtube" target="_blank">
+              <i class="fab fa-youtube"></i>
+              <span>YouTube</span>
+            </a>
+            <a href="https://twitch.tv/mylesthegreat" class="social-link-large twitch" target="_blank">
+              <i class="fab fa-twitch"></i>
+              <span>Twitch</span>
+            </a>
+            <a href="https://www.tiktok.com/@mylestg" class="social-link-large tiktok" target="_blank">
+              <i class="fab fa-tiktok"></i>
+              <span>TikTok</span>
+            </a>
+            <a href="https://github.com/mylesmiller" class="social-link-large github" target="_blank">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/mylesmillersmu/" class="social-link-large linkedin" target="_blank">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://x.com/mylesthegreat2" class="social-link-large twitter" target="_blank">
+              <i class="fab fa-twitter"></i>
+              <span>Twitter</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Myles Miller. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Navbar scroll effect
+    let lastScroll = 0;
+    const navbar = document.getElementById('navbar');
+    
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+      
+      if (currentScroll > 100) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+      
+      lastScroll = currentScroll;
+    });
+
+    // Active nav link highlighting
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= sectionTop - 200) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // Mobile menu toggle
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const navLinksContainer = document.querySelector('.nav-links');
+
+    mobileMenuToggle.addEventListener('click', () => {
+      navLinksContainer.classList.toggle('mobile-open');
+      const icon = mobileMenuToggle.querySelector('i');
+      icon.classList.toggle('fa-bars');
+      icon.classList.toggle('fa-times');
+    });
+  </script>
 </body>
 </html>
